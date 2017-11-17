@@ -1,35 +1,38 @@
 body {
     margin: 0;
-    display: flex;
-    flex-grow: 1;
+    /* global text color/opacity */
     color: rgba(0,0,0, .87);
-    text-align: center;
-    vertical-align: middle;
 }
 .app {
     height: 100vh;
-    display: flex;
-    flex: 1 100%;
+    /* for header-main-footer column */
+    display: flex; 
     flex-direction: column;
     justify-content: space-between;
 }
 .body {
+    /* for left-center-right row */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* size proportion in header-main-footer column */
     flex-grow: 13;
 }
 .header {
-    flex-grow: 1;
     background-color: pink;
+    /* size proportion in header-main-footer column */
+    flex-grow: 1;
+    /* for centering of text inside */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: large;
 }
 .footer {
-    flex-grow: 1;
     background-color: grey;
+    /* size proportion in header-main-footer column */
+    flex-grow: 1;
+    /* for centering of text inside */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,15 +40,19 @@ body {
 }
 .left {
     background-color: red;
+    /* size proportion in left-center-right row */
     flex-grow: 1;
 }
 .right {
     background-color: blue;
+    /* size proportion in left-center-right row */
     flex-grow: 1;
 }
 .center {
     background-color: green;
+    /* absolute size in left-center-right row */
     width: 960px;
+    /* for centering of button inside */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,9 +60,11 @@ body {
 }
 .button {
     background-color: white;
+    /* absolute minimum size */
     border-radius: 150px;
     height: 150px;
     width: 150px;
+    /* for centering of text inside */
     display: flex;
     justify-content: center;
     align-items: center;
