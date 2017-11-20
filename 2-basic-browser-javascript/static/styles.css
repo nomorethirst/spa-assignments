@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    /* global text color/opacity */
+    color: rgba(0,0,0, .87);
+}
+.app {
+    height: 100vh;
+    /* for header-main-footer column */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.body {
+    /* for left-center-right row */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* size proportion in header-main-footer column */
+    flex-grow: 13;
+}
+.header {
+    background-color: pink;
+    /* size proportion in header-main-footer column */
+    flex-grow: 1;
+    /* for centering of text inside */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.footer {
+    background-color: grey;
+    /* size proportion in header-main-footer column */
+    flex-grow: 1;
+    /* for centering of text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+.left {
+    background-color: red;
+    /* size proportion in left-center-right row */
+    flex-grow: 1;
+    /* for centering of button inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.right {
+    background-color: blue;
+    /* size proportion in left-center-right row */
+    flex-grow: 1;
+    /* for centering of button inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.center {
+    background-color: green;
+    /* absolute size in left-center-right row */
+    width: 960px;
+    /* for centering of button inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.headerButton {
+    background-color: white;
+    margin: 10px;
+    /* absolute minimum size */
+    border-radius: 5px;
+    height: 20px;
+    width: 80px;
+    /* for centering of text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+#resetButton {
+    background-color: grey;
+}
+.button {
+    background-color: white;
+    margin: 10px;
+    /* absolute minimum size */
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    /* for centering of text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label {
+    background-color: white;
+    margin: 10px;
+    /* absolute minimum size */
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+    /* for centering of text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelSpacer {
+    margin: 10px;
+    /* absolute minimum size */
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+    /* for centering of text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#multiplier {
+    pointer-events: none;
+    background-color: grey;
+}
+#autoclicker {
+    pointer-events: none;
+    background-color: grey;
+}
